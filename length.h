@@ -1,0 +1,6 @@
+#define WHOLE		2200
+#define HALF 		WHOLE/2
+#define QUARTER		HALF/2
+#define EIGHTH		QUARTER/2
+#define EIGHTH_TRIPLE	QUARTER/3
+#define SIXTEENTH	EIGHTH/2
