@@ -16,7 +16,7 @@ void playNote(int frequency, int duration, bool hold = false){
 
 void setup() {
   // Initialize serial output and Circuit Playground library.
-  Serial.begin(115200);
+  Serial.begin(9600);
   CircuitPlayground.begin();
 }
 
@@ -60,9 +60,9 @@ void mary(){
   playNote(NOTE_AS4, QUARTER, true);
   playNote(NOTE_AS4, HALF);
 
-  playNote(NOTE_GS3, QUARTER, true);
-  playNote(NOTE_GS3, QUARTER, true);
-  playNote(NOTE_GS3, HALF);
+  playNote(NOTE_GS4, QUARTER, true);
+  playNote(NOTE_GS4, QUARTER, true);
+  playNote(NOTE_GS4, HALF);
 
   playNote(NOTE_AS4, QUARTER);
   playNote(NOTE_CS4, QUARTER, true);
@@ -77,84 +77,84 @@ void mary(){
   playNote(NOTE_AS4, QUARTER, true);
 
   playNote(NOTE_AS4, QUARTER);
-  playNote(NOTE_GS3, QUARTER, true);
-  playNote(NOTE_GS3, QUARTER);
-  playNote(NOTE_AS3, QUARTER);
+  playNote(NOTE_GS4, QUARTER, true);
+  playNote(NOTE_GS4, QUARTER);
+  playNote(NOTE_AS4, QUARTER);
   playNote(NOTE_GS4, QUARTER);
   playNote(NOTE_FS4, HALF);
 }
 
 void twinkle(){
-  playNote(NOTE_C4, HALF, true);
-  playNote(NOTE_C4, HALF);
-  playNote(NOTE_G4, HALF, true);
-  playNote(NOTE_G4, HALF);
-  playNote(NOTE_A4, HALF, true);
-  playNote(NOTE_A4, HALF);
-  playNote(NOTE_G4, WHOLE);
-
-  playNote(NOTE_F4, HALF, true);
-  playNote(NOTE_F4, HALF);
-  playNote(NOTE_E4, HALF, true);
-  playNote(NOTE_E4, HALF);
-  playNote(NOTE_D4, HALF, true);
-  playNote(NOTE_D4, HALF);
-  playNote(NOTE_C4, WHOLE);
-
-  playNote(NOTE_G4, HALF, true);
-  playNote(NOTE_G4, HALF);
-  playNote(NOTE_F4, HALF, true);
-  playNote(NOTE_F4, HALF);
-  playNote(NOTE_E4, HALF, true);
-  playNote(NOTE_E4, HALF);
-  playNote(NOTE_D4, WHOLE);
-
-  playNote(NOTE_G4, HALF, true);
-  playNote(NOTE_G4, HALF);
-  playNote(NOTE_F4, HALF, true);
-  playNote(NOTE_F4, HALF);
-  playNote(NOTE_E4, HALF, true);
-  playNote(NOTE_E4, HALF);
-  playNote(NOTE_D4, WHOLE);
-
-  playNote(NOTE_C4, HALF, true);
-  playNote(NOTE_C4, HALF);
-  playNote(NOTE_G4, HALF, true);
-  playNote(NOTE_G4, HALF);
-  playNote(NOTE_A4, HALF, true);
-  playNote(NOTE_A4, HALF);
-  playNote(NOTE_G4, WHOLE);
-
-  playNote(NOTE_F4, HALF, true);
-  playNote(NOTE_F4, HALF);
-  playNote(NOTE_E4, HALF, true);
-  playNote(NOTE_E4, HALF);
-  playNote(NOTE_D4, HALF, true);
-  playNote(NOTE_D4, HALF);
-  playNote(NOTE_C4, WHOLE+HALF);
-}
-
-void buns(){
-  playNote(NOTE_B4, HALF);
-  playNote(NOTE_A4, HALF);
-  playNote(NOTE_G4, WHOLE);
-
-  playNote(NOTE_B4, HALF);
-  playNote(NOTE_A4, HALF);
-  playNote(NOTE_G4, WHOLE);
-
-  playNote(NOTE_G4, QUARTER, true);
-  playNote(NOTE_G4, QUARTER, true);
+  playNote(NOTE_C4, QUARTER, true);
+  playNote(NOTE_C4, QUARTER);
   playNote(NOTE_G4, QUARTER, true);
   playNote(NOTE_G4, QUARTER);
   playNote(NOTE_A4, QUARTER, true);
-  playNote(NOTE_A4, QUARTER, true);
+  playNote(NOTE_A4, QUARTER);
+  playNote(NOTE_G4, HALF);
+
+  playNote(NOTE_F4, QUARTER, true);
+  playNote(NOTE_F4, QUARTER);
+  playNote(NOTE_E4, QUARTER, true);
+  playNote(NOTE_E4, QUARTER);
+  playNote(NOTE_D4, QUARTER, true);
+  playNote(NOTE_D4, QUARTER);
+  playNote(NOTE_C4, HALF);
+
+  playNote(NOTE_G4, QUARTER, true);
+  playNote(NOTE_G4, QUARTER);
+  playNote(NOTE_F4, QUARTER, true);
+  playNote(NOTE_F4, QUARTER);
+  playNote(NOTE_E4, QUARTER, true);
+  playNote(NOTE_E4, QUARTER);
+  playNote(NOTE_D4, HALF);
+
+  playNote(NOTE_G4, QUARTER, true);
+  playNote(NOTE_G4, QUARTER);
+  playNote(NOTE_F4, QUARTER, true);
+  playNote(NOTE_F4, QUARTER);
+  playNote(NOTE_E4, QUARTER, true);
+  playNote(NOTE_E4, QUARTER);
+  playNote(NOTE_D4, HALF);
+
+  playNote(NOTE_C4, QUARTER, true);
+  playNote(NOTE_C4, QUARTER);
+  playNote(NOTE_G4, QUARTER, true);
+  playNote(NOTE_G4, QUARTER);
   playNote(NOTE_A4, QUARTER, true);
   playNote(NOTE_A4, QUARTER);
+  playNote(NOTE_G4, HALF);
 
-  playNote(NOTE_B4, HALF);
-  playNote(NOTE_A4, HALF);
-  playNote(NOTE_G4, WHOLE);
+  playNote(NOTE_F4, QUARTER, true);
+  playNote(NOTE_F4, QUARTER);
+  playNote(NOTE_E4, QUARTER, true);
+  playNote(NOTE_E4, QUARTER);
+  playNote(NOTE_D4, QUARTER, true);
+  playNote(NOTE_D4, QUARTER);
+  playNote(NOTE_C4, HALF+QUARTER);
+}
+
+void buns(){
+  playNote(NOTE_B4, QUARTER);
+  playNote(NOTE_A4, QUARTER);
+  playNote(NOTE_G4, HALF);
+
+  playNote(NOTE_B4, QUARTER);
+  playNote(NOTE_A4, QUARTER);
+  playNote(NOTE_G4, HALF);
+
+  playNote(NOTE_G4, SIXTEENTH, true);
+  playNote(NOTE_G4, SIXTEENTH, true);
+  playNote(NOTE_G4, SIXTEENTH, true);
+  playNote(NOTE_G4, SIXTEENTH);
+  playNote(NOTE_A4, SIXTEENTH, true);
+  playNote(NOTE_A4, SIXTEENTH, true);
+  playNote(NOTE_A4, SIXTEENTH, true);
+  playNote(NOTE_A4, SIXTEENTH);
+
+  playNote(NOTE_B4, QUARTER);
+  playNote(NOTE_A4, QUARTER);
+  playNote(NOTE_G4, HALF);
 }
 
 void jingle(){
@@ -220,28 +220,30 @@ void jingle(){
   playNote(NOTE_D4, QUARTER);
   playNote(NOTE_C4, WHOLE);
 }
-
 void loop() {
+  int x;
+  if(Serial.available() > 0) {
+     x = Serial.read();
+  }
 
-if(Serial.read() == 1){
+if(x == 97){
 birthday();
 }
 
-if(Serial.read() == 2) {
+if(x == 98) {
 mary();
 }
 
-if(Serial.read() == 3) {
+if(x == 99) {
 twinkle();
 }
 
-if(Serial.read() == 4) {
+if(x == 100) {
 buns();
 }
 
-if(Serial.read() == 5) {
+if(x == 101) {
 jingle();
 }
 
-delay(5000);
 }

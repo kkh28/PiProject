@@ -93,45 +93,46 @@ Oh what fun it is to ride<br>
 In a one-horse open sleigh.
 </p>"
 
-[[ $QUERY_STRING =~ song=([0-5]*) ]]
+[[ $QUERY_STRING =~ song=([a-z]*) ]]
 song=${BASH_REMATCH[1]}
 
-if [ $song = 0 ]
+if [ $song = z ]
 then
 echo "<h1> Song Player </h1>"
-echo "<p class=\"main\"> To play a song click the end of the url above and change the number after \"song=\" to a number between 1 and 5.<br>
-Song 1 = Happy Birthday<br>
-Song 2 = Mary Had A Little Lamb<br>
-Song 3 = Twinkle Twinkle Little Star<br>
-Song 4 = Hot Cross Buns<br>
-Song 5 = Jingle Bells</p>"
+echo "<p class=\"main\"> To play a song click the end of the url above and change the letter after \"song=\" to a letter between a and e.<br>
+Song a = Happy Birthday<br>
+Song b = Mary Had A Little Lamb<br>
+Song c = Twinkle Twinkle Little Star<br>
+Song d = Hot Cross Buns<br>
+Song e = Jingle Bells</p>"
 fi
 
-if [ $song = 1 ] 
+if [ $song = a ] 
 then
 echo "$h"
 echo "$happy"
+
 fi
 
-if [ $song = 2 ]
+if [ $song = b ]
 then
 echo "$l"
 echo "$lamb"
 fi
 
-if [ $song = 3 ]
+if [ $song = c ]
 then
 echo "$s"
 echo "$star"
 fi
 
-if [ $song = 4 ]
+if [ $song = d ]
 then
 echo "$b"
 echo "$buns"
 fi
 
-if [ $song = 5 ]
+if [ $song = e ]
 then
 echo "$j"
 echo "$jingle"
@@ -142,4 +143,6 @@ echo "<div></div>"
 echo "</body>"
 echo "</html>"
 
-sudo $song >> ttyACM0
+echo $song
+
+echo $song > /dev/ttyACM0
